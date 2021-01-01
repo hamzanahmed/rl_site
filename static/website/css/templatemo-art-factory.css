@@ -906,186 +906,59 @@ about
 services
 --------------------------------------------- 
 */
-#services {
-  position: relative;
-  padding: 120px 0px 90px 0px;
-  background: rgba(0, 136, 232, 1);
-  background: -moz-linear-gradient(
-    -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    right bottom,
-    color-stop(0%, rgba(0, 136, 232, 1)),
-    color-stop(0%, rgba(0, 182, 198, 1)),
-    color-stop(100%, rgba(0, 136, 232, 1))
-  );
-  background: -webkit-linear-gradient(
-    -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
-  background: -o-linear-gradient(
-    -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
-  background: linear-gradient(
-    135deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
-}
-
-.service-item {
-  cursor: pointer;
-  display: block;
-  background: #ffffff;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
-  text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  position: relative;
-}
-
-@media screen and (max-width: 920px) {
-  .service-item {
-    margin: 0px 30px !important;
-  }
-}
-
-.service-item:hover .icon,
-.service-item:hover a.main-button {
-  background-color: #0088e8;
-}
-
-.service-item .icon {
-  text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  margin: auto;
-  position: relative;
-  margin-bottom: 30px;
-  background: #00b4c6;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  position: relative;
-}
-
-.service-item .icon img {
-  max-width: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.service-item .service-title {
-  font-weight: 500;
-  font-size: 18px;
-  color: #1e1e1e;
-  letter-spacing: 0.7px;
-  margin-bottom: 15px;
-  position: relative;
-  z-index: 2;
-}
-
-.service-item p {
-  font-weight: 400;
-  font-size: 13px;
-  color: #777;
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  position: relative;
-  z-index: 2;
-}
-
-.service-item a.main-button {
-  margin-top: 30px;
-  display: inline-block;
-}
-
-.owl-carousel .owl-dots {
-  margin-top: 60px;
-  text-align: center;
-  align-self: center;
-}
-
-.owl-carousel button.owl-dot span {
-  border-radius: 50%;
-  background-color: #fff;
-  width: 5px;
-  height: 5px;
-  display: inline-block;
-  margin: 0px 5px;
-}
-
-.owl-carousel button.active span {
-  width: 8px;
-  height: 8px;
-  padding-top: 1.5px;
-}
-
-.owl-carousel {
-  position: relative;
-}
-
-.owl-carousel .owl-nav button.owl-next span {
-  top: 32%;
-  border-radius: 50%;
-  font-size: 36px;
-  color: #fff;
-  right: -80px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  display: inline-block;
-  background-color: rgba(250, 250, 250, 0.15);
-  position: absolute;
-}
-
-.owl-carousel .owl-nav button.owl-prev span {
-  top: 32%;
-  border-radius: 50%;
-  font-size: 36px;
-  color: #fff;
-  left: -80px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  display: inline-block;
-  background-color: rgba(250, 250, 250, 0.15);
-  position: absolute;
-}
-
-@media screen and (max-width: 1320px) {
-  .owl-carousel .owl-nav {
-    display: none !important;
-  }
+#services .row
+width: 100%
+max-width: 45rem
+margin: 0 auto
+padding: 1.5rem
+background-color: yellow
+#services .card
+display: inline-block
+width: 45%
+//margin: 0 auto
+padding: 4rem 1rem 7rem 1rem
+background-color: teal
+position: relative
+&:after
+  content: ""
+  display: block
+  width: 0px
+  height: 0px
+  background-color: skyblue
+  top: 0px
+  right: 0px
+  border-bottom: 20px solid darken(teal, 5%)
+  border-left: 20px solid darken(teal, 5%)
+  border-right: 20px solid yellow
+  border-top: 20px solid yellow
+  position: absolute
+  filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5))
+&:before
+  content: ""
+  display: block
+  width: 0px
+  height: 0px
+  border-top: 40px solid darken(teal, 5%)
+  border-right: 40px solid darken(teal, 5%)
+  border-left: 40px solid yellow
+  border-bottom: 40px solid yellow
+  bottom: 0px
+  left: 0px
+  position: absolute
+  filter: drop-shadow(7px -7px 5px rgba(0,0,0,0.5))
+  margin-right: 10%
+&:nth-of-type(1)
+  margin-right: 9%
+  #services h2
+  color: snow
+  margin-bottom: 1rem
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 1px
+  #services p
+  color: snow
+  font-size: 1.1rem
+  line-height: 140%
 }
 
 /*
